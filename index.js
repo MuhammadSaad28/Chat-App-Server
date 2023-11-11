@@ -10,8 +10,8 @@ app.use(express.json());
 require('dotenv').config();
 port = process.env.PORT;
 app.use(cors());
-app.use("/.netlify/functions/api/auth" , userRoutes)
-app.use("/.netlify/functions/api/messages" , msgRoutes)
+app.use("/api/auth" , userRoutes)
+app.use("/api/messages" , msgRoutes)
 
 
 
